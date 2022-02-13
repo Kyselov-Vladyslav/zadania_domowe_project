@@ -1,0 +1,200 @@
+.zaglowek {
+  @extend %mixin-card;
+  margin: auto;
+  padding: 0 30px 0 70px;
+  display: flex;
+  width: 80%;
+  height: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+h2 {
+  padding: 0;
+  color: $text_zaglowki;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+}
+.zaglowek__right {
+  display: flex;
+  align-items: center;
+}
+.zaglowek__item {
+  display: flex;
+  color: $text_link;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 2.14;
+
+  & + & {
+    margin-left: 30px;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.1s ease-in;
+
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+}
+
+.zaglowek__img {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.opis {
+  margin: auto;
+  width: 80%;
+}
+.opis a {
+  color: $blue;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.1s ease-in;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+p,
+output {
+  color: $text;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: italic;
+  margin-right: 10px;
+  text-align: justify;
+}
+.opis strong {
+  font-weight: 700;
+}
+.mapa {
+  margin-top: 40px;
+}
+.mapa a {
+  font-size: 20px;
+  line-height: 1.5;
+  color: $blue;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.1s ease-in;
+
+  &:hover {
+    color: $text;
+    text-decoration: none;
+  }
+}
+.mapa li {
+  display: flex;
+}
+
+.content_main {
+  @extend %mixin-card;
+  margin: auto;
+  padding: 10px 50px 10px 50px;
+  width: 80%;
+  height: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.content_main p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.zaglowek_kalkulator {
+  padding: 20px;
+}
+form {
+  justify-content: space-around;
+  text-align: center;
+  display: flex;
+}
+.formatowanie_input p {
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 30px;
+}
+.formatowanie_input {
+  @extend %mixin-card_interior;
+  padding: 7%;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 2px solid $text_link;
+}
+input {
+  text-align: center;
+  margin: 0px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 2px solid $text_link;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: $text_zaglowki;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 2.14;
+
+  &::placeholder {
+    color: $text_link;
+  }
+}
+.oblicz {
+  margin-top: 25px;
+  text-align: center;
+}
+button {
+  padding: 9px;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: none;
+  background-color: #1875f0;
+  border-radius: 20px;
+  border: none;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 900;
+  transition: background-color 0.1s ease-in;
+  &:hover {
+    background-color: $text_zaglowki;
+  }
+}
+.content_output {
+  @extend %mixin-card_interior;
+  text-align: center;
+  margin-top: 30px;
+  display: block;
+  padding: 3%;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 2px solid $text_link;
+}
+.content {
+  justify-content: center;
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.wyrownianie {
+  margin-top: -4px;
+}
+
+.interpretacja strong {
+  font-weight: 900;
+}
+.content_output img {
+  width: 80%;
+}

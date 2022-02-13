@@ -1,0 +1,26 @@
+@media screen and (max-width: 1070px) {
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 767px) {
+ 
+ h1 {
+     font-size: 45px;
+ }
+   h2 {
+    font-size: 35px;
+  }
+  a, p, output, .mapa a{
+    font-size: 28.5px;
+  }
+  .zaglowek__img {
+    width: 5%;
+  }
+  .zaglowek, .opis, .content_main, .footer-width  { 
+    padding: 10px 5px 10px 5px;
+      width: 98%;
+  }
+  
+ 
+
+}

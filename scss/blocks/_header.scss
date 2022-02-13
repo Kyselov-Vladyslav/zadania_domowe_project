@@ -1,0 +1,15 @@
+header {
+  padding: 25px;
+  margin: 0 auto;
+  position: sticky;
+  @extend %mixin-card_heafer-footer;
+  margin-bottom: 30px;
+}
+h1 {
+    padding: 0;
+    color: $text_zaglowki;
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 1;
+    text-align: center;
+}

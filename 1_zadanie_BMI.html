@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kalkulator BMI</title>
+  </head>
+  <body>
+    <header>
+      <h1>Kalkulator: Body Mass Index</h1>
+    </header>
+    <main>
+      <section class="zaglowek">
+        <h2>Wskaźnik masy ciała</h2>
+        <div class="zaglowek__right">
+          <div class="zaglowek__item">
+            <a href="index.html">Strona główna</a>
+          </div>
+          <img
+            class="zaglowek__img"
+            src="assets/icons/gonext.svg"
+            alt=">>"
+            width="12px"
+          />
+          <div class="zaglowek__item">
+            <a href="#"><strong>Kalkulator BMI</strong></a>
+          </div>
+        </div>
+      </section>
+      <section class="opis">
+        <p>
+          <strong>Wskaźnik masy ciała</strong> (wskaźnik Queteleta II) –
+          współczynnik powstały przez podzielenie masy ciała podanej w
+          kilogramach przez kwadrat wysokości podanej w metrach. Klasyfikacja
+          (zakres wartości) wskaźnika <strong>BMI</strong> została opracowana
+          wyłącznie dla dorosłych i nie może być stosowana u dzieci. Dla oceny
+          prawidłowego rozwoju dziecka wykorzystuje się siatki centylowe, które
+          powinny być dostosowane dla danej populacji. Oznaczanie wskaźnika masy
+          ciała ma znaczenie w ocenie zagrożenia chorobami związanymi z nadwagą
+          i otyłością, np. cukrzycą, chorobą niedokrwienną serca, miażdżycą.
+          Przyjmuje się, że wyższe wartość <strong>BMI</strong> wiążą się ze
+          zwiększonym ryzykiem dla zdrowia i życia.
+        </p>
+      </section>
+      <section class="content_main">
+        <h2 class="zaglowek_kalkulator">Kalkulator</h2>
+        <p>
+          W celu obliczenia <strong>wskaźnika masy ciała</strong> wprowadź
+          wzrost (cm) i wagę (kg):
+        </p>
+
+        <form
+          oninput="result.value =  (parseInt (num2.value) / (parseInt (num1.value) * (parseInt (num1.value))))*10000"
+          step="0.01"
+        >
+          <div class="formatowanie_input">
+            <input
+              class="cm"
+              type="number"
+              name="num1"
+              min="100"
+              max="300"
+              required
+              placeholder="cm"
+            />
+
+            <p>Twój wzrost</p>
+          </div>
+          <div class="formatowanie_input">
+            <input
+              class="kg"
+              type="number"
+              name="num2"
+              min="10"
+              max="300"
+              required
+              placeholder="kg"
+            />
+            <p>Twoja waga</p>
+          </div>
+        </form>
+        <div class="oblicz">
+          <button type="button" class="btn">OBLICZ</button>
+        </div>
+        <div class="content_output hidden">
+          <div class="content">
+            <p>Twój <strong>wskaźnik masy ciała:</strong></p>
+            <output id="result" step="0.01"></output>
+            <p class="wyrownianie">
+              kg/m<sup><small>2</small></sup>
+            </p>
+          </div>
+          <div class="interpretacja">
+            <p class="wynik">Interpretacja twojego wyniku:</p>
+          </div>
+          <img
+            src="assets/masa.png"
+            alt="Wskaźnik masy ciała (Body Mass Index)"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-width">
+        <div class="zaglowek__item">
+          <a href="index.html">@2022.Vladyslav Kyselov </a>
+        </div>
+        <div class="zaglowek__right">
+          <div class="zaglowek__item">
+            <a href="index.html">Strona główna</a>
+          </div>
+          <img
+            class="zaglowek__img"
+            src="assets/icons/gonext.svg"
+            alt=">>"
+            width="12px"
+          />
+          <div class="zaglowek__item">
+            <a href="#"><strong>Kalkulator BMI</strong></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/kalkulator_bmi.js"></script>
+  </body>
+</html>
