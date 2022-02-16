@@ -14,7 +14,7 @@ function btnClick() {
     alert(
       "Minimalny wzrost musi być 100 cm oraz minimalna waga 10 kg dla prawidłowego wyniku."
     );
-    content_output.classList.add("hidden");
+    content_output.classList.remove("hidden");
   }
   if (parseFloat(cm.value) <= 300 && parseFloat(kg.value) <= 300) {
     content_output.classList.remove("hidden");
@@ -22,7 +22,7 @@ function btnClick() {
     alert(
       "Maksymalny wzrost musi być 300 cm oraz maksymalna waga 300 kg dla prawidłowego wyniku."
     );
-    content_output.classList.add("hidden");
+    content_output.classList.remove("hidden");
   }
 }
 
