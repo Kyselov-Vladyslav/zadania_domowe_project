@@ -49,13 +49,13 @@
         </p>
 
         <form
-          oninput="result.value =  (parseInt (num2.value) / (parseInt (num1.value) * (parseInt (num1.value))))*10000"
+          oninput="result.value = (parseFloat(waga.value) / (parseFloat(wzrost.value) * (parseFloat(wzrost.value))))*10000"
         >
           <div class="formatowanie_input">
             <input
               class="cm"
               type="number"
-              name="num1"
+              name="wzrost"
               min="100"
               max="300"
               required
@@ -68,7 +68,7 @@
             <input
               class="kg"
               type="number"
-              name="num2"
+              name="waga"
               min="10"
               max="300"
               required
